@@ -1,38 +1,36 @@
 class Triangle
-  
   attr_accessor :x, :y, :z
-  
   def initialize(x, y, z)
     @x = x
     @y = y
     @z = z
   end
-  
+
   def kind
-    if positive_triangle == true && sides_triangle == true
-      puts true
-    else
-      raise TriangleError
-    end
+    if kosher_triangle == true && kosher_triangle2 == true 
+      puts true 
+    else 
+      raise TriangleError 
+    end 
     
-    if x == y && y == z && z == x
+    if x == y && y == z && x == z
       :equilateral
     elsif x != y && y != z && z != x
-      :scalene
-    else
+      :scalene 
+    else 
       :isosceles
-    end
-    
+    end 
   end
   
-  def positive_triangle
+  def kosher_triangle 
     x.positive? && y.positive? && z.positive?
-  end
+  end 
   
-  def sides_triangle
+  def kosher_triangle2 
     x + y > z && x + z > y && y + z > x
-  end  
-  
-  
+  end 
+end
+
+class TriangleError < StandardError
   
 end
