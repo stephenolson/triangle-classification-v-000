@@ -15,6 +15,10 @@ class Triangle
       raise TriangleError
     end
     
+    if x == y && y == z && z == x
+      :equilateral
+    end
+    
   end
   
   def positive_triangle
