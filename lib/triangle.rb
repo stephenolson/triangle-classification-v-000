@@ -17,6 +17,11 @@ class Triangle
     
     if x == y && y == z && z == x
       :equilateral
+    elsif
+      :scalene
+    else
+      :isosceles
+    
     end
     
   end
