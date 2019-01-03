@@ -14,6 +14,10 @@ class Triangle
   end
   
   def positive_triangle
-    w.positive? && y.positive? && z.positive?
+    x.positive? && y.positive? && z.positive?
   end
+  
+  def sides_triangle
+    x + y > z
+  
 end
