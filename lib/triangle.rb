@@ -15,14 +15,13 @@ class Triangle
       raise TriangleError
     end
     
-    if x == y && y == z && x == z
+    if x == y && y == z && z == x
       :equilateral
     elsif x != y && y != z && z != x
       :scalene
     else
       :isosceles
     end
-    
   end
   
   def positive_triangle
@@ -33,6 +32,9 @@ class Triangle
     x + y > z && x + z > y && y + z > x
   end  
   
+  class TriangleError < StandardError
+  
+  end
   
   
 end
