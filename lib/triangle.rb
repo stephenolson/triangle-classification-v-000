@@ -9,7 +9,7 @@ class Triangle
   end
   
   def kind
-    
+    if positive_triangle == true && sides_triangle == true
     
   end
   
@@ -18,6 +18,8 @@ class Triangle
   end
   
   def sides_triangle
-    x + y > z
+    x + y > z && x + z > y && y + z > x
+  end  
+  
   
 end
