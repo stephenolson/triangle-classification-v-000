@@ -15,7 +15,7 @@ class Triangle
       raise TriangleError
     end
     
-    if x == y && y == z && z == x
+    if x == y && y == z && x == z
       :equilateral
     elsif x != y && y != z && z != x
       :scalene
