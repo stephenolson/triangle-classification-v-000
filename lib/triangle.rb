@@ -10,6 +10,10 @@ class Triangle
   
   def kind
     if positive_triangle == true && sides_triangle == true
+      puts true
+    else
+      raise TriangleError
+    end
     
   end
   
