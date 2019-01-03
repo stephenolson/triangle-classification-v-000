@@ -10,6 +10,10 @@ class Triangle
   
   def kind
     
+    
   end
   
+  def positive_triangle
+    w.positive? && y.positive? && z.positive?
+  end
 end
