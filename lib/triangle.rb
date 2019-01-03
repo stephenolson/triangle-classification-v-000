@@ -33,6 +33,6 @@ class Triangle
     x + y > z && x + z > y && y + z > x
   end  
   
-  class TriangleError < StandardError
+  
   
 end
